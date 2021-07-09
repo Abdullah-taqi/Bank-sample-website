@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datepicker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+  </head>
+
+  <body
+  class="text-center"
+  data-new-gr-c-s-check-loaded="14.1017.0"
+  data-gr-ext-installed="">
+
+  <div class="container AOF">
+    <form class="container form-signin m-5 loginSection">
+      <img class="mt-5" src="logo.png" alt="" width="72" height="72" />
+      <h1 class="h3 mb-5 font-weight-normal text-white">ACCOUNT OPENING FORM</h1>
+
+    
+
+      <div class="email mt-3">
+        <label for="username" class="sr-only"></label>
+        <input
+          type="name"
+          id="username"
+          class="form-control"
+          placeholder="Full Name"
+        />
+      </div>
+
+<div class="flexcontainer">
+      <div class="email mt-4">
+        <label for="age" class="sr-only"></label>
+        <input
+          type="number"
+          id="age"
+          class="form-control"
+          placeholder="Age"
+          
+        />
+      </div>
+
+      <div class="email">
+        <label for="pin" class="sr-only">Deposit by</label>
+        <input
+          type="number"
+          id="pin"
+          class="form-control"
+          placeholder="Pin"
+        />
+      </div>
+</div>
+      
+      <div class="email mt-4">
+        <label for="address" class="sr-only"></label>
+        <input
+          type="text"
+          id="address"
+          class="form-control"
+          placeholder="Address"
+        />
+      </div>
+
+      
+
+      <div class="form-group email">
+        <div class='input-group date' id='datetimepicker1' >
+            <input type='text' class="form-control" placeholder="Date" id="date"/>
+            <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+      </div>
+
+      <div class="email radiobtn">
+        <div>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Saving</label><br>
+      </div>
+      <div>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Current</label><br>
+      </div>
+      </div>
+     
+
+      <div class="signinBtn">
+        <button
+          href="#"
+          class="btn btn-lg btn-block"
+          role="button"
+          onclick="accNo()"
+          >Create Account</button>
+        
+
+       
+    </form>
+  </div>
+  
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+<script type="text/javascript">
+    $(function() {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>

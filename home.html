@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Hub</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Baloo Bhai 2", cursive;
+      margin: 0;
+      padding: 0;
+      background: url(bg.png);
+      color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container button {
+      display: block;
+      width: 62.5%;
+
+      margin: 20px auto;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .formGroup input {
+      text-align: center;
+      display: block;
+      width: 300px;
+      padding: 2px;
+      font-size: 20px;
+      border: 2px solid black;
+      margin: 8px auto;
+      border-radius: 5px;
+      font-family: "Baloo Bhai 2", cursive;
+    }
+    .container {
+      /* border: 2px solid white; */
+      margin: 50px 50px;
+      padding-top: 70px;
+      border-radius: 28px;
+      width: 33%;
+    }
+
+    .container a {
+      text-decoration: none;
+    }
+    .btn {
+      margin: 0px 9px;
+      background-color: rgb(46, 44, 44);
+      color: white;
+      padding: 7px 14px;
+      border: 2px solid rgb(65, 64, 64);
+      border-radius: 8px;
+      font-size: 19px;
+      cursor: pointer;
+      font-family: "Baloo Bhai 2", cursive;
+      overflow-x: hidden;
+      text-decoration: none;
+    }
+
+    .btn a {
+      color: white;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: rgb(63, 59, 59);
+    }
+    .left img {
+      width: 70px;
+      /* filter: invert(100%); */
+    }
+    .left div {
+      text-align: center;
+      font-family: "Baloo Bhai 2", cursive;
+    }
+    .left {
+      /* border: 2px solid green; */
+      display: inline-block;
+      position: absolute;
+      left: 22px;
+      top: 22px;
+      line-height: 0%;
+    }
+    .mid {
+      display: block;
+      margin: 12px auto;
+      width: 45%;
+      /* border: 2px solid yellow; */
+    }
+    .right {
+      position: absolute;
+      right: 32px;
+      top: 20px;
+      /* border: 2px solid red; */
+      display: inline-block;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      padding: 4px;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      color: rgb(194, 192, 192);
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="mylogo.png" alt="" />
+      </div>
+
+      <div class="mid">
+        <ul class="navbar">
+          <li><a hrf="#">Home</a></li>
+          <li><a hrf="#">About us</a></li>
+          <li><a hrf="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="btn">Email us</button>
+        <a href="index.html"><button class="btn">Logout</button></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <a href="depositamount.html"
+        ><button class="btn">Deposit amount</button></a
+      >
+      <a href="withdrawamount.html"
+        ><button class="btn">Withdraw amount</button></a
+      >
+      <a href="balance.html"><button class="btn">Check balance</button></a>
+      <a href="transferamount.html"
+        ><button class="btn">Transfer amount</button></a
+      >
+    </div>
+  </body>
+</html>

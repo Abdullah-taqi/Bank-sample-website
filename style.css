@@ -1,0 +1,157 @@
+:root {
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --bg-opacity: rgba(255, 255, 255, 0.5);
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+  --blue-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #54165a;
+  --pink-shadow: 3px 3px 3px #ee7bdb, -3px -3px 3px #f8f8f8;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bg.png);
+  color: white;
+}
+.email {
+  margin-bottom: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.password {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.signinBtn {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.signinBtn p {
+  text-align: right;
+  font-weight: 600;
+}
+.signinBtn p a {
+  text-decoration: none;
+}
+
+.signinBtn p a:hover {
+  color: grey;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+}
+.container span {
+  color: red;
+}
+.aof {
+  visibility: show;
+}
+.aof h4 {
+  text-align: center;
+}
+.aof span a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.aof span a:hover {
+  color: gray;
+}
+.outer-shadow {
+  box-shadow: var(--outer-shadow);
+}
+.inner-shadow {
+  box-shadow: var(--inner-shadow);
+}
+.blue-shadow {
+  box-shadow: var(--blue-shadow);
+}
+.pink-shadow {
+  box-shadow: var(--pink-shadow);
+}
+.hover-in-shadow {
+  position: relative;
+  z-index: 1;
+}
+.hover-in-shadow:hover {
+  box-shadow: var(--outer-shadow-0);
+}
+.hover-in-shadow:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease;
+  z-index: -1;
+}
+.hover-in-shadow:hover:after {
+  box-shadow: var(--inner-shadow);
+}
+.navigationBar {
+  background-color: black;
+  padding: 20px;
+  display: fixed;
+}
+
+.navigationBar a {
+  color: white;
+}
+.container h3 {
+  text-align: left;
+}
+.container .details {
+  border: 2px solid rgb(36, 35, 35);
+  border-radius: 30px;
+  padding: 40px;
+  display: inline-block;
+  margin-top: 40px;
+  background-color: rgb(63, 60, 60);
+}
+
+.AOF form {
+  margin-top: 50px;
+}
+.AOF .email input {
+  padding: 18px;
+}
+
+.AOF h1 {
+  color: white;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.AOF .signinBtn button {
+  background-color: #2e2a2a;
+  color: white;
+}
+
+.AOF .signinBtn button:hover {
+  background-color: #3b3939;
+}
+
+.AOF .form-group span {
+  color: #000000;
+}
+.AOF .radiobtn {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  color: white;
+}
